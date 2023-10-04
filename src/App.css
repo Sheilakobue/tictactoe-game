@@ -1,0 +1,111 @@
+/* style.css */
+
+/* Styling for the game container */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative; /* Add relative positioning */
+}
+
+/* Styling for the game board */
+.game-board {
+  text-align: center;
+  margin-right: 20px;
+  box-shadow: 0 6px 10px rgba(24, 20, 20, 0.5);/* Add shadow here */
+  border-radius: 10px; /* Add border radius */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #612323; /* Set background color */
+}
+
+/* Styling for game status */
+.status {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+/* Styling for individual squares */
+.square {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #c68c8c;
+  margin: 2px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+    /* Add transition for smooth animation */
+  
+}
+/* Add hover effect to turn the square */
+.square:hover {
+  transform: rotateY(180deg);
+  /* Rotate the square 180 degrees on hover */
+}
+
+
+/* Styling for game moves */
+.game-info {
+  font-size: 20px;
+}
+
+.instructions {
+  background-color: #c68c8c;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the game alert */
+.game-alert {
+    text-align: center;
+    position: absolute;/* Position the alert */
+    left: 50%;/* Center it horizontally */
+    top: 50%;
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #f9f8f8;
+    border: 1px solid #271212;
+    padding: 20px;
+    border-radius: 5px;
+    width:fit-content;
+  }
+
+    /* Styling for the player names section */
+    .player-names {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    /* Styling for player name label */
+    .player-name-label {
+      font-weight: bold;
+      color: #ddd;
+      margin-right: 5px;
+    }
+  
+    /* Styling for player name input */
+    .player-name-input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      background-color: #c68c8c;
+      border-radius: 4px;
+      font-size: 14px;
+      width: 150px;
+    }
+  .game-scores {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
